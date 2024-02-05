@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Schedule Email</title>
+</head>
+<body>
+<h1>Hi I am <%=user %></h1>
+    <form action="/schedule-email" method="post">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="time">Scheduled Time (in cron format):</label>
+        <input type="text" id="time" name="time" placeholder="* * * * * (e.g., 0 0 * * *)" required>
+
+        <label for="message">Custom Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your custom message" required></textarea>
+
+        <button type="submit">Schedule Email</button>
+    </form>
+</body>
+<script>
+
+</script>
+</html>
